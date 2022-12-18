@@ -7,6 +7,6 @@ edition = "2021"
 
 [dependencies]
 dotenv = "0.15.0"
-serenity = "0.11.5"
+serenity = { version = "0.11.5", default-features = false, features = ["client", "gateway", "rustls_backend", "model", "cache"] }
 songbird = "0.3.0"
 tokio = { version = "1.21.2", features = ["macros", "rt-multi-thread", "signal"] }
